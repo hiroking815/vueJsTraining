@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>vue test</title>
+
+</head>
+<body>
+  <div id="app">
+    <button @click="addItem">add</button>
+    <p>Length: {{ length }}</p>
+    <ul>
+      <li v-for="(item, i) in list" :key="item">{{ item }}
+        <button @click="list.splice(i, 1)">remove</button>
+      </li>
+    </ul>
+  </div>
+  <script src="js/vue.js"></script>
+  <script type="text/javascript" src="js/vuejs.js"></script>
+</body>
+</html>
